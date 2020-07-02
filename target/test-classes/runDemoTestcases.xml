@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false" thread-counts="3">
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+		<listener class-name="commons.ExtentReportListener"></listener>
+		<listener class-name="commons.ReportNGListener"></listener>
+	</listeners>
+
+	<test name="Demo site">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+	 			<class name="com.demo.parentPortal.Parent_Portal_Test_Case" />
+		</classes>
+	</test>
+
+</suite>
